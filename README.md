@@ -209,6 +209,35 @@ Iterative prompting is a structured, step-by-step approach used to refine and op
 
 ## Summarizing
 
+Summarizing is the process of reducing text while keeping the essential meaning.  
+With prompts, we can control **length**, **style**, **audience**, or **specific details** the model should extract.
+
+---
+
+**Template**
+Summarize the following text according to the rules below:
+Length: {short | medium | long | number of bullets}
+Style: {neutral | academic | professional | simple}
+Focus: {key ideas | facts | names | dates | deadlines | arguments}
+
+Text:  
+"""  
+{INPUT_TEXT}  
+"""
+
+---
+
+**Examples:**
+- **controlled length**
+Summarize in exactly 3 bullet points.
+- **controlled audience**
+Explain to a 12-year-old.
+- **controlled style**
+Write in a professional tone.
+- **extraction summary**
+Extract only dates, names and deadlines.
+
+
 ## Inferring
 
 ## Transforming
