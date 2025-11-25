@@ -44,10 +44,10 @@ Used for:
 - isolating raw text blocks
 
 **Example:**
-```
+\`\`\`
 def add(a,b)
     return a+b
-```
+\`\`\`
 
 ---
 
@@ -70,6 +70,7 @@ Used for:
 - multi-part input
 
 **Example:**
+
 --- Introduction ---
 {TEXT}
 
@@ -84,8 +85,8 @@ Used for:
 - short placeholders
 
 **Example:**
-Hello <name>  
-Your message is: <TEXT>
+Hello `<name>`
+Your message is: `<TEXT>`
 
 ---
 
@@ -96,9 +97,9 @@ Used for:
 - machine-readable output
 
 **Example:**
-<input>  
+`<input>`
 {TEXT}  
-</input>
+`</input>`
 
 
 ## Structured Outputs (HTML, JSON)
