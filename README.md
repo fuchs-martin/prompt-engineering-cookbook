@@ -44,9 +44,9 @@ Used for:
 - isolating raw text blocks
 
 **Example:**
-\`\`\`
-def add(a,b)
-    return a+b
+\`\`\`  
+def add(a,b)  
+    return a+b  
 \`\`\`
 
 ---
@@ -57,9 +57,9 @@ Used for:
 - essays, articles, paragraphs
 
 **Example:**
-Summarize the following text:
-"""
-Delimiters are boundary markers that help structure input for LLMs...
+Summarize the following text:  
+"""  
+Delimiters are boundary markers that help structure input for LLMs...  
 """
 
 ---
@@ -69,13 +69,13 @@ Used for:
 - separating sections
 - multi-part input
 
-**Example:**
+**Example:**  
 
---- Introduction ---
-{TEXT}
-
---- Article ---
-{TEXT}
+--- Introduction ---  
+{TEXT}  
+  
+--- Article ---  
+{TEXT}  
 
 ---
 
@@ -85,7 +85,7 @@ Used for:
 - short placeholders
 
 **Example:**
-Hello `<name>`
+Hello `<name>`  
 Your message is: `<TEXT>`
 
 ---
@@ -97,8 +97,8 @@ Used for:
 - machine-readable output
 
 **Example:**
-`<input>`
-{TEXT}  
+`<input>`  
+{TEXT}    
 `</input>`
 
 
