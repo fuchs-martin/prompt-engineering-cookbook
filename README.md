@@ -192,6 +192,21 @@ What a horrible show! //
 
 ## Iterative Prompting
 
+Iterative prompting is a structured, step-by-step approach used to refine and optimize the output in more complex tasks or multi-step interactions, where responses must dynamically adapt to evolving inputs. It typically happens in the following steps:
+
+1. **Initial prompt creation**  
+   - create a clear initial prompt
+
+2. **Model response evaluation**  
+   - review the AI-generated response
+
+3. **Prompt refinement**  
+   - modify or extend the prompt based on what was missing or wrong
+
+4. **Feedback incorporation and iteration**  
+   - incorporate human or automated feedback to rate the quality of responses  
+   - use this feedback to improve the next iteration
+
 ## Summarizing
 
 ## Inferring
