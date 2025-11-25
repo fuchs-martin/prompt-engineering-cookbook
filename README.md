@@ -172,6 +172,24 @@ Process:
 
 ## Few-Shot Prompting
 
+Using the zero-shot technique usually produces correct results, but it can fail with more complex tasks.  
+For more complex tasks, **few-shot prompting** was introduced, which improves output quality by providing examples of the desired format or behavior.
+
+The principle is simple:  
+we show the model several input–output examples, and it learns the pattern directly from them.  
+This guides the model, reduces ambiguity, and corrects mistakes that often occur in zero-shot prompting.
+
+---
+
+**Example**
+Prompt:  
+This is awesome! // Negative  
+This is bad! // Positive  
+Wow, that movie was rad! // Positive  
+What a horrible show! // 
+
+---
+
 ## Iterative Prompting
 
 ## Summarizing
