@@ -214,10 +214,10 @@ With prompts, we can control **length**, **style**, **audience**, or **specific 
 
 ---
 
-**Template**
-Summarize the following text according to the rules below:
-Length: {short | medium | long | number of bullets}
-Style: {neutral | academic | professional | simple}
+**Template**  
+Summarize the following text according to the rules below:  
+Length: {short | medium | long | number of bullets}  
+Style: {neutral | academic | professional | simple}  
 Focus: {key ideas | facts | names | dates | deadlines | arguments}
 
 Text:  
@@ -228,13 +228,13 @@ Text:
 ---
 
 **Examples:**
-- **controlled length**
+- **controlled length**  
 Summarize in exactly 3 bullet points.
-- **controlled audience**
+- **controlled audience**  
 Explain to a 12-year-old.
-- **controlled style**
+- **controlled style**  
 Write in a professional tone.
-- **extraction summary**
+- **extraction summary**  
 Extract only dates, names and deadlines.
 
 
