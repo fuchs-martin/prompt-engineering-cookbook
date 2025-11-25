@@ -129,6 +129,47 @@ Specifying that the output format should be in a defined **JSON**, **HTML**, or 
 
 ## Verifying Conditions
 
+When we need the output to be safe, accurate, or internally appropriate, we must introduce checks that verify whether the model’s response complies with the instructions. This method is known as **Verifying Conditions**. Verification can be done from two primary perspectives:
+- Moderation API  
+- Model-evaluates-model
+
+---
+
+**Moderation API**
+This verifies that the output does not contain prohibited content (violence, hate, sexuality, self-harm…) and returns safety categories and risk scores.
+
+If the content is flagged, the system can:
+- display a fallback response  
+- generate a new response  
+- block the output entirely  
+
+---
+
+**Model-evaluates-model**
+The second strategy is to use the model itself to check the quality of its own output.
+
+Process:
+- the model generates an answer for the user  
+- the answer is sent back to the model together with the original question  
+- the model responds YES/NO based on whether:  
+  - the answer sufficiently addresses the question  
+  - the information is correct and used properly  
+
+---
+
+**Advantages**
+- immediate quality checking  
+- protection against hallucinations  
+- suitable for precise or critical systems  
+
+**Disadvantages**
+- increases latency (additional model call)  
+- increases cost (more tokens)  
+- slower overall system  
+- often unnecessary for newer, more reliable models  
+
+---
+
 ## Few-Shot Prompting
 
 ## Iterative Prompting
