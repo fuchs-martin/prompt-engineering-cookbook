@@ -22,6 +22,8 @@ In practice, this involves techniques such as:
 
 This Prompt Engineering Cookbook brings together the most practical techniques used by professionals — and by me — to achieve predictable and high-quality results when working with LLMs.
 
+---
+
 ## Delimiters
 
 Delimiters are boundary markers that isolate specific parts of the input so the model can clearly distinguish between instructions, context, and data.  
@@ -36,7 +38,7 @@ They improve clarity, control, reduce errors, prevent hallucinations, and increa
 
 ---
 
-## **Types of Delimiters and Examples**
+### **Types of Delimiters and Examples**
 
 ### **1. Triple backticks** \`\`\`
 Used for:
@@ -101,8 +103,29 @@ Used for:
 {TEXT}    
 `</input>`
 
+---
 
 ## Structured Outputs (HTML, JSON)
+
+Specifying that the output format should be in a defined **JSON**, **HTML**, or **XML** structure for easier subsequent manipulation. Structured output ensures that the model returns information in a predictable, machine-readable format. This makes it easier to post-process, validate, and integrate into applications or pipelines.
+
+---
+
+**When to use sctructured outputs**
+- you need consistent formating
+- you plan to parse the output programmatically
+- you need the model to follow a schema (JSON keys, HTML tags)
+
+---
+
+**Example**
+
+**Instruction:**
+“Extract the following information and return it in JSON format.”
+
+**Input:**
+
+---
 
 ## Verifying Conditions
 
