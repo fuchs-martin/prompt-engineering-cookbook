@@ -24,6 +24,83 @@ This Prompt Engineering Cookbook brings together the most practical techniques u
 
 ## Delimiters
 
+Delimiters are boundary markers that isolate specific parts of the input so the model can clearly distinguish between instructions, context, and data.  
+They improve clarity, control, reduce errors, prevent hallucinations, and increase formatting accuracy.
+
+### **Use delimiters when:**
+- the input text is long, messy, or unstructured  
+- you want to separate the instruction from the data being processed  
+- you are performing tasks such as summarizing, transforming, rewriting, or extracting  
+- you need structured or predictable output  
+- you want to avoid the model “mixing” context with commands  
+
+---
+
+## **Types of Delimiters and Examples**
+
+### **1. Triple backticks** \`\`\`
+Used for:
+- code of any type (Python, Java, HTML, etc.)
+- isolating raw text blocks
+
+**Example:**
+```
+def add(a,b)
+    return a+b
+```
+
+---
+
+### **2. Triple quotes** `""" ... """`
+Used for:
+- long text passages
+- essays, articles, paragraphs
+
+**Example:**
+Summarize the following text:
+"""
+Delimiters are boundary markers that help structure input for LLMs...
+"""
+
+---
+
+### **3. Triple dashes** `---`
+Used for:
+- separating sections
+- multi-part input
+
+**Example:**
+--- Introduction ---
+{TEXT}
+
+--- Article ---
+{TEXT}
+
+---
+
+### **4. Angle brackets** `< >`
+Used for:
+- variables or user inputs  
+- short placeholders
+
+**Example:**
+Hello <name>  
+Your message is: <TEXT>
+
+---
+
+### **5. XML-style tags** `<tag> </tag>`
+Used for:
+- strict structured formatting  
+- avoiding ambiguity in multi-section prompts  
+- machine-readable output
+
+**Example:**
+<input>  
+{TEXT}  
+</input>
+
+
 ## Structured Outputs (HTML, JSON)
 
 ## Verifying Conditions
