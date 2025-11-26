@@ -1,6 +1,8 @@
 # prompt-engineering-cookbook
 A structured collection of prompt engineering templates, techniques and patterns.
 
+---
+
 ## Table of Contents
 [Introduction](#introduction)  
 [Delimiters](#delimiters)  
