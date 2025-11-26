@@ -287,6 +287,26 @@ Additional constraints: {length | audience | format}
 
 ## Expanding
 
+Expanding takes a short piece of text and turns it into a longer, more detailed version.  
+The model uses the original text as the basis and extends it with explanations, context, examples, or narrative content.  
+This technique is often used for elaboration, idea development, creative writing, or adding missing details.
+
+Temperature can also influence expanding:  
+- **temperature = 0** → predictable, consistent, low-creativity output  
+- **higher temperature** → more creative and varied expansions  
+
+**Examples**
+**Simple elaboration**  
+"Expand this sentence into a short paragraph."  
+**Adding context**  
+"Expand this idea by explaining why it is important."  
+**Creative expansion**  
+"Expand this plot idea into a short scene."  
+**Educational expansion**  
+"Expand this concept using an example suitable for beginners."  
+
+---
+
 ## Chain-of-Thought Reasoning
 
 ## Chaining Prompts
