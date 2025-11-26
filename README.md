@@ -311,7 +311,7 @@ Temperature can also influence expanding:
 
 ## Chain-of-Thought Reasoning
 
-Chain-of-thought reasoning (CoT) is a process where the prompt explicitly instructs the model to show or follow a specific way of thinking, which should lead to a more optimal output.  
+**Chain-of-thought reasoning (CoT)** is a process where the prompt explicitly instructs the model to show or follow a specific way of thinking, which should lead to a more optimal output.  
 
 With a simple prompt like *"Let’s think step by step!"* we define **zero-shot CoT**, where we only roughly suggest that the model should reason step by step.  
 **Few-shot CoT** is used when we provide the model with concrete examples of reasoning steps or a particular reasoning style that it should follow.
@@ -337,4 +337,62 @@ Step N: ...
 
 ## Chaining Prompts
 
+**Chaining prompts** is a method where a task is broken down into multiple smaller subtasks.  
+The model completes one subtask at a time, and each output becomes the input for the next step.  
+This continues until the final answer is produced.
+
+Chaining is used to:
+- increase output quality  
+- catch mistakes earlier  
+- verify that the model considers intermediate logic  
+- make the reasoning process more transparent and controllable  
+
+---
+
+### **Examples**
+
+**1. Simple 3-step chain**
+Step 1: Summarize the following text.
+Step 2: Based on the summary, extract the key problems.
+Step 3: Generate solutions for each problem.
+
+**2. Research chain**
+Task: Create a short research report.
+Step 1: Identify the main topic.
+Step 2: List three key aspects of the topic.
+Step 3: For each aspect, provide a short explanation.
+Step 4: Combine everything into one coherent summary.
+
 ## Appendix
+
+### Glossary of Terms
+
+- **Delimiters** — boundary markers (```...```, """...""", <tag>) used to isolate text and prevent ambiguity.  
+- **JSON Output** — structured, machine-readable format used for predictable parsing and post-processing.  
+- **Moderation API** — a safety tool that checks model output for prohibited or harmful content.  
+- **Few-Shot Prompting** — guiding the model using several input–output examples in the prompt.  
+- **Zero-Shot Prompting** — prompting without examples; the model must infer the expected structure on its own.  
+- **Temperature** — a parameter that controls output randomness (0 = deterministic, higher = more creative).  
+- **Hallucination** — when the model generates incorrect, fabricated, or unsupported information.  
+
+---
+
+### Useful Resources
+
+- https://promptingguide.ai  
+- https://platform.openai.com/docs/guides/prompting  
+- https://www.ibm.com/think/prompt-engineering  
+- “Prompt engineering” guides on Medium.com  
+
+---
+
+### Common Mistakes
+
+- unclear or vague instructions  
+- mixing input text with instructions (no separation)  
+- missing delimiters around long or messy text  
+- not specifying an output format (JSON, HTML, bullet points)  
+- asking the model to perform too many tasks at once  
+- relying only on zero-shot prompting for complex tasks  
+- forgetting to verify or validate the output  
+- using unnecessarily high temperature values  
