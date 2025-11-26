@@ -1,6 +1,21 @@
 # prompt-engineering-cookbook
 A structured collection of prompt engineering templates, techniques and patterns.
 
+## Table of Contents
+[Introduction](#introduction)  
+[Delimiters](#delimiters)  
+[Structured Outputs](#structured-outputs-html-json)  
+[Verifying Conditions](#verifying-conditions)  
+[Few-Shot Prompting](#few-shot-prompting)  
+[Iterative Prompting](#iterative-prompting)  
+[Summarizing](#summarizing)  
+[Inferring](#inferring)  
+[Transforming](#transforming)  
+[Expanding](#expanding)  
+[Chain-of-Thought Reasoning](#chain-of-thought-reasoning)  
+[Chaining Prompts](#chaining-prompts)  
+[Appendix](#appendix)
+
 ## Introduction
 
 Working with *large language models (LLMs)* can be diverse, unpredictable, and even inaccurate if we don’t know how to use them properly. Based on the need for more precise, correct, predictable, and controllable answers, a new discipline has emerged for developers and for optimizing prompts — **prompt engineering**.
@@ -48,7 +63,7 @@ Used for:
 **Example:**  
 \`\`\`  
 def add(a,b)  
-    return a+b  
+  return a+b  
 \`\`\`
 
 ---
@@ -58,7 +73,7 @@ Used for:
 - long text passages
 - essays, articles, paragraphs
 
-**Example:**
+**Example:**  
 Summarize the following text:  
 """  
 Delimiters are boundary markers that help structure input for LLMs...  
@@ -86,7 +101,7 @@ Used for:
 - variables or user inputs  
 - short placeholders
 
-**Example:**
+**Example:**  
 Hello `<name>`  
 Your message is: `<TEXT>`
 
@@ -98,7 +113,7 @@ Used for:
 - avoiding ambiguity in multi-section prompts  
 - machine-readable output
 
-**Example:**
+**Example:**  
 `<input>`  
 {TEXT}    
 `</input>`
@@ -111,8 +126,8 @@ Specifying that the output format should be in a defined **JSON**, **HTML**, or 
 
 ---
 
-**When to use sctructured outputs**
-- you need consistent formating
+**When to use structured outputs**
+- you need consistent formatting
 - you plan to parse the output programmatically
 - you need the model to follow a schema (JSON keys, HTML tags)
 
@@ -206,6 +221,8 @@ Iterative prompting is a structured, step-by-step approach used to refine and op
 4. **Feedback incorporation and iteration**  
    - incorporate human or automated feedback to rate the quality of responses  
    - use this feedback to improve the next iteration
+
+---
 
 ## Summarizing
 
@@ -351,17 +368,19 @@ Chaining is used to:
 
 ### **Examples**
 
-**1. Simple 3-step chain**
-Step 1: Summarize the following text.
-Step 2: Based on the summary, extract the key problems.
+**1. Simple 3-step chain**  
+Step 1: Summarize the following text.  
+Step 2: Based on the summary, extract the key problems.  
 Step 3: Generate solutions for each problem.
 
-**2. Research chain**
-Task: Create a short research report.
-Step 1: Identify the main topic.
-Step 2: List three key aspects of the topic.
-Step 3: For each aspect, provide a short explanation.
-Step 4: Combine everything into one coherent summary.
+**2. Research chain**  
+Task: Create a short research report.  
+Step 1: Identify the main topic.  
+Step 2: List three key aspects of the topic.  
+Step 3: For each aspect, provide a short explanation.  
+Step 4: Combine everything into one coherent summary.  
+
+---
 
 ## Appendix
 
