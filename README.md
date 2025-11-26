@@ -270,6 +270,21 @@ Text:
 
 ## Transforming
 
+Transforming refers to changing the structure, style, format, or representation of text while keeping its meaning intact.  
+This includes tasks such as rewriting, reformatting, paraphrasing, adjusting tone, or translating between languages.
+
+The goal is not to infer new information, but to modify how the information is presented.
+
+---
+
+### **Template**  
+
+Transform the following text according to the rules below:  
+Transformation type: {rewrite | paraphrase | simplify | formalize | translate | change tone}  
+Target style: {professional | casual | academic | simple}  
+Additional constraints: {length | audience | format}  
+
+
 ## Expanding
 
 ## Chain-of-Thought Reasoning
