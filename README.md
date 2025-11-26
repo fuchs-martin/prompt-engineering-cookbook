@@ -16,6 +16,8 @@ A structured collection of prompt engineering templates, techniques and patterns
 [Chaining Prompts](#chaining-prompts)  
 [Appendix](#appendix)
 
+---
+
 ## Introduction
 
 Working with *large language models (LLMs)* can be diverse, unpredictable, and even inaccurate if we don’t know how to use them properly. Based on the need for more precise, correct, predictable, and controllable answers, a new discipline has emerged for developers and for optimizing prompts — **prompt engineering**.
