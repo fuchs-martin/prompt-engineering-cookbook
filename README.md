@@ -10,14 +10,14 @@ Prompt engineering helps us understand how LLMs behave, how they interpret instr
 The core idea is simple:
 **well-designed input → high-quality output.**
 
-In practice, this involves techniques such as:
--isolating content with delimiters,
--structuring output into HTML or JSON,
--enforcing specific rules or constraints,
--guiding the model through examples (few-shot prompting),
--refining responses iteratively,
--transforming, summarizing, or expanding text,
--shaping tone or style,
+In practice, this involves techniques such as:  
+-isolating content with delimiters,  
+-structuring output into HTML or JSON,  
+-enforcing specific rules or constraints,  
+-guiding the model through examples (few-shot prompting),  
+-refining responses iteratively,  
+-transforming, summarizing, or expanding text,  
+-shaping tone or style,  
 -or applying reasoning patterns like chain-of-thought or multi-step reasoning.
 
 This Prompt Engineering Cookbook brings together the most practical techniques used by professionals — and by me — to achieve predictable and high-quality results when working with LLMs.
@@ -45,7 +45,7 @@ Used for:
 - code of any type (Python, Java, HTML, etc.)
 - isolating raw text blocks
 
-**Example:**
+**Example:**  
 \`\`\`  
 def add(a,b)  
     return a+b  
@@ -267,6 +267,7 @@ Text:
 }
 ```
 
+---
 
 ## Transforming
 
@@ -284,6 +285,7 @@ Transformation type: {rewrite | paraphrase | simplify | formalize | translate | 
 Target style: {professional | casual | academic | simple}  
 Additional constraints: {length | audience | format}  
 
+---
 
 ## Expanding
 
@@ -308,6 +310,30 @@ Temperature can also influence expanding:
 ---
 
 ## Chain-of-Thought Reasoning
+
+Chain-of-thought reasoning (CoT) is a process where the prompt explicitly instructs the model to show or follow a specific way of thinking, which should lead to a more optimal output.  
+
+With a simple prompt like *"Let’s think step by step!"* we define **zero-shot CoT**, where we only roughly suggest that the model should reason step by step.  
+**Few-shot CoT** is used when we provide the model with concrete examples of reasoning steps or a particular reasoning style that it should follow.
+
+---
+
+### **Examples**
+
+**Zero-shot CoT**  
+`{TEXT}. Let's think step by step.`  
+
+**Few-shot CoT**  
+Question:  
+{TEXT}  
+Example reasoning:  
+Step 1: ...  
+Step 2: ...  
+Step 3: ...  
+...  
+Step N: ...
+
+---
 
 ## Chaining Prompts
 
