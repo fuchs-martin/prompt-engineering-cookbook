@@ -237,8 +237,36 @@ Write in a professional tone.
 - **extraction summary**  
 Extract only dates, names and deadlines.
 
+---
 
 ## Inferring
+
+Inferring means deriving new information through deduction or reasoning.  
+For an AI model, inferring is the ability to analyze given text and extract implicit meaning, facts, or attributes that are not directly stated but can be logically concluded.  
+
+The model receives input → analyzes it → and infers the required conclusions.
+
+---
+
+**Example**  
+
+**Input:**  
+Infer the following information from the <text> and present it in JSON format.  
+Information to infer: Sentiment, Anger, Item, Brand  
+
+Text:  
+"review of product"
+
+**Output:**  
+```json
+{
+  "Sentiment": "positive",
+  "Anger": false,
+  "Item": "MacBook",
+  "Brand": "Apple"
+}
+
+
 
 ## Transforming
 
